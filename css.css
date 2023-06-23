@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 4s;
+  }
+  
+  /* CSS untuk menampilkan elemen saat di-scroll */
+.visible {
+    opacity: 1;
+  }
+
+.card {
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+  }
+  
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(57, 57, 57);
+    height: 100vh;
+    /* width: 80%;
+    margin: 0px auto; */
+}
+
+.wkwk{
+    width: 100%;
+    height: 95vh;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(10%);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 2px 4px 30px 3px rgba(0, 0, 0, 0.475);
+}
+
+
+
+.warnatext{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.main-hobbies {
+    width: 80%;
+    margin: 120px auto 80px auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 60px;
+    background-color: #7f8abb44;
+}
+
+
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
