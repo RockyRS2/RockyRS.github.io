@@ -20,45 +20,61 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
 
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="script.js">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   </head>
-  <body style="overflow-x:hidden ;" class="warnatext">
-    <div class="wkwk">
+  <body>
+    <div class="jumbotron">
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div>
-          <a class="navbar-brand" href="#home">Home</a>
-          <a class="navbar-brand" href="#about">About</a>
-          <a class="navbar-brand" href="#education">Education</a>
-          <a class="navbar-brand" href="#contact">Contact</a>
-
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">  <h2 class="fw-bold text-white">Rocky<span class="fs-1">.</span></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#contact">Contact</a>
+              </li>
+             
+            </ul>
+          
+          </div>
         </div>
       </nav>
 
-      <div class="p-5" id="home">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-8 col-sm-10 order-2 order-lg-1">
-              <div class="p-5">
-                <h1>Hello Welcome To My Portfolio</h1>
-                <br>
-                <h2>Rocky Ramdhan Setiawan</h2>
-                <h4>Software Engineer | Web Developer</h4>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-8 col-sm-10 order-1 order-lg-2">
-              <div class="p-5">
-                <img class="img-fluid rounded-circle d-block mx-auto" style="max-width: 100%;" src="img/oki.jpeg" alt>
-              </div>
-            </div>
+      <div class="profile">
+        <img class="d-block mx-auto" src="img/oki.jpeg" alt>
+        <div class="col-md-8 col-sm-10">
+          <div class="p-5">
+            <h1>Hello Welcome To My Portfolio</h1>
+            <h4>Rocky Ramdhan Setiawan</h4>
+            <small class="text-uppercase" style="font-size: 10px;">Software Engineer | Web Developer</small>
           </div>
         </div>
-      </div>
 
+      </div>
+    </div>
+
+    <div class="main warnatext">
       <div id="about" class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-8 col-sm-10 hidden" id="aboutMe">
@@ -140,10 +156,10 @@
           </div>
         </div>
       </div>
-
-      <audio autoplay loop="true">
-        <source src="audio/enemy.mp3" type="audio/mpeg">
-      </audio>
+      
+          <audio autoplay loop="true">
+            <source src="audio/enemy.mp3" type="audio/mpeg">
+          </audio>
 
       <div class="container">
         <div class="row justify-content-center">
@@ -304,90 +320,92 @@
         </div>
         <br>
 
-        <!-- footer -->
-        <footer class="text-center text-lg-start bg-dark text-muted">
-          <!-- Section: Social media -->
-          <section
-            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-              <a
-                href="https://www.linkedin.com/in/rocky-ramdhan-setiawan-765866250"
-                class="me-4 link-secondary">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href class="me-4 link-secondary">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-
-            <!-- Right -->
-          </section>
-          <!-- Section: Social media -->
-
-          <!-- Section: Links  -->
-          <section class>
-            <div class="container text-center text-md-start mt-5">
-              <!-- Grid row -->
-              <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <!-- Content -->
-                  <h6 class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-gem me-2 text-secondary"></i>Rocky Ramdhan
-                    Setiawan
-                  </h6>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  <!-- Links -->
-                  <h6 class="text-uppercase fw-bold mb-4" id="contact">Contact</h6>
-                  <p><i class="fas fa-home me-3 text-secondary"></i>
-                    Indonesia,Bandung</p>
-                  <p>
-                    <i class="fas fa-envelope me-3 text-secondary"></i>
-                    rockyramdhansetiawan@gmail.com
-                  </p>
-                  <p><i class="fas fa-phone me-3 text-secondary"></i> +62
-                    87880832835</p>
-
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-          </section>
-          <!-- Section: Links  -->
-
-          <!-- Copyright -->
-          <div class="text-center p-4"
-            style="background-color: rgba(0, 0, 0, 0.025);">
-
-            <a class="text-reset fw-bold" href>Copyright © 2022. My Portfolio
-              Website Crafted by Rocky</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-
       </div>
 
-      <script src="script.js"></script>
-      <!-- JQuery -->
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- footer -->
+      <footer class="text-center text-lg-start bg-dark text-muted">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
 
-      <!-- Slick JS -->
-      <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <!-- Right -->
+          <div>
+            <a
+              href="https://www.linkedin.com/in/rocky-ramdhan-setiawan-765866250"
+              class="me-4 link-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/RockyRS2" class="me-4 link-secondary">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
 
-    </body>
-  </html>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class>
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-2 text-secondary"></i>Rocky Ramdhan
+                  Setiawan
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" id="contact">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i>
+                  Indonesia,Bandung</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  rockyramdhansetiawan@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> +62
+                  87880832835</p>
+
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.025);">
+
+          <a class="text-reset fw-bold" href>Copyright © 2022. My Portfolio
+            Website Crafted by Rocky</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    </div>
+
+    <script src="script.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  </body>
+</html>

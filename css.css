@@ -1,72 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .hidden {
-    opacity: 0;
-    transition: opacity 4s;
-  }
-  
-  /* CSS untuk menampilkan elemen saat di-scroll */
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+/* CSS untuk menampilkan elemen saat di-scroll */
 .visible {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .card {
-    opacity: 0;
-    transition: opacity 1s, transform 0.5s;
-  }
-  
+  opacity: 0;
+  transition: opacity 1s, transform 0.5s;
+}
+
 .slide-in {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-
-  
-
+  opacity: 1;
+  transform: translateX(0);
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(57, 57, 57);
-    height: 100vh;
-    /* width: 80%;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(57, 57, 57);
+  height: 100vh;
+
+  /* width: 80%;
     margin: 0px auto; */
 }
 
-.wkwk{
-    width: 100%;
-    height: 95vh;
-    background: url(img/bg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: brightness(10%);
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    box-shadow: 2px 4px 30px 3px rgba(0, 0, 0, 0.475);
+/* -=-=-=-=-= JUMBOTRON START -=-=-=-=-= */
+
+.jumbotron {
+  width: 100%;
+  height: 95vh;
+  background: url(img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.59);
+  background-blend-mode: color-burn;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  box-shadow: 2px 4px 30px 3px rgba(0, 0, 0, 0.475);
+}
+
+.profile {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+  text-align: center;
 }
 
 
+.profile img {
+  width: 250px;
+  border-radius: 100%;
+  height: 250px;
+  border: 10px solid white;
+  object-fit: cover;
+}
 
-.warnatext{
-    text-decoration: none;
-    color: white;
-    display: flex;
+
+@media only screen and (max-width: 600px) {
+  
+  .profile img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .jumbotron {
+    height: max-content;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+
+
+  .profile h4 {
+    font-size: 1.8rem;
+  }
+
+  .profile h1 {
+    font-size: 0.8rem;
+  }
+  
+
+}
+
+/* -=-=-=-=-= JUMBOTRON END -=-=-=-=-= */
+
+.warnatext {
+  text-decoration: none;
+  color: white;
 }
 
 .main-hobbies {
-    width: 80%;
-    margin: 120px auto 80px auto;
-    position: relative;
-    text-align: center;
-    color: white;
-    padding: 60px;
-    background-color: #7f8abb44;
+  width: 80%;
+  margin: 120px auto 80px auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px;
+  background-color: #7f8abb44;
 }
-
 
 .slider {
   width: 80%;
