@@ -30,14 +30,24 @@
     <link rel="stylesheet" href="script.js">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <style>
+      .slider-img {
+        height: 300px;
+      }
+    </style>
+
   </head>
   <body>
     <div class="jumbotron">
 
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">  <h2 class="fw-bold text-white">Rocky<span class="fs-1">.</span></h2></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"> <h2 class="fw-bold text-white">Rocky<span
+                class="fs-1">.</span></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,14 +59,16 @@
                 <a class="nav-link text-light" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#education">Education</a>
+                <a class="nav-link text-light" aria-current="page"
+                  href="#education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#contact">Contact</a>
+                <a class="nav-link text-light" aria-current="page"
+                  href="#contact">Contact</a>
               </li>
-             
+
             </ul>
-          
+
           </div>
         </div>
       </nav>
@@ -67,7 +79,8 @@
           <div class="p-5">
             <h1>Hello Welcome To My Portfolio</h1>
             <h4>Rocky Ramdhan Setiawan</h4>
-            <small class="text-uppercase" style="font-size: 10px;">Software Engineer | Web Developer</small>
+            <small class="text-uppercase" style="font-size: 10px;">Software
+              Engineer | Web Developer</small>
           </div>
         </div>
 
@@ -83,26 +96,26 @@
               <br>
               <p>
                 Currently, I am on an educational journey at Sekolah tinggi
-                Teknologi Bandung. I had an amazing opportunity to pursue a
+                Teknologi Bandung and at Lithan Educlass Singapore. I had an
+                amazing opportunity to pursue a
                 bachelor's degree in Software Engineering, which is a very
-                exciting and rapidly growing field in this digital age. Every
-                day, I engage in a deep and intensive learning process, which
-                includes understanding basic concepts, software development, app
-                design, as well as cutting-edge technologies such as artificial
-                intelligence and web development. I feel fortunate to be able to
-                interact with experienced faculty as well as classmates who
-                share the same passion. and I am also taking part in the
-                Educlass lithan program where we learn to be a reliable web
-                developer to compete in the world of work on the international
-                scene and I am also happy to have various foreign and domestic
-                partners
+                exciting and rapidly growing field in this digital age.
+                As a dedicated Software Engineer, my career goals are:
+
+                Produce innovative software solutions.
+                Keep up with the latest technological developments.
+                Improve collaboration and teamwork skills.
+                Improve software quality.
+                Become a reliable technical leader.
               </p>
+              <button class="btn bg-danger">Vidio Introduction</button>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-8 col-sm-10 hidden" id="imageDiv">
             <div class="p-5">
-              <img class="img-fluid" style="max-width: 100%;" src="img/or.png"
+              <img class="img-fluid" style="max-width: 100%;"
+                src="img/orang.png"
                 alt>
             </div>
           </div>
@@ -156,16 +169,16 @@
           </div>
         </div>
       </div>
-      
-          <audio autoplay loop="true">
+
+      <!-- <audio autoplay loop="true">
             <source src="audio/enemy.mp3" type="audio/mpeg">
-          </audio>
+          </audio> -->
 
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="p-5">
-              <h1>Vision</h1>
+              <h3>Visison</h3>
               <br>
               <p>
                 Become a software engineer who is passionate, continuously seeks
@@ -177,27 +190,12 @@
 
           <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="p-5">
-              <h1>Mission</h1>
+              <h3>Mission</h3>
               <br>
               <p>
-                Maintain high enthusiasm and motivation in seeking knowledge
-                about software engineering. Conduct research and independent
-                studies consistently to deepen understanding of the latest
-                concepts, principles, and technologies in software engineering.
-                Stay up to date with developments and trends in the software
-                engineering industry through readings, online courses, and
-                participation in developer communities. Participate in relevant
-                formal and non-formal education programs to acquire deeper
-                knowledge and skills in software engineering. Attend
-                conferences, seminars, and workshops related to software
-                engineering to interact with professionals and learn from their
-                experiences. Apply the knowledge gained in real projects and try
-                out new technologies to improve practical skills as a software
-                engineer. Share knowledge and experience with the software
-                engineering community via blogs, forums, or other open
-                contributions. Build a professional network with colleagues and
-                experts in the field of software engineering to broaden insights
-                and opportunities for collaboration.
+                To create high-quality, innovative software that meets customer
+                needs while maintaining customer satisfaction and effective
+                collaboration.
               </p>
             </div>
           </div>
@@ -284,43 +282,152 @@
         </div>
       </div>
 
-      <!-- slidder -->
+      <div class="d-flex justify-content-center">
 
-      <div>
-        <h1 class="text-center">Recent Projects</h1>
-        <div class="slider container w-50 ">
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <img class="slider-img" src="img/m1.png" alt="">
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+    
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 style="color: black;"><img style="height: 220px;" src="img/m1.png" alt="">Develop Using HTML, CSS, JAVASCRIPT</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-          <div>
-            <a href="#">
-              <img src="img/m1.png" alt="Image 1">
-            </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="#">
-              <img src="img/m3.png" alt="Image 2">
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="img/m5.png" alt="Image 4">
-            </a>
-          </div>
-
-          <div>
-            <a href="#">
-              <img src="img/m6.png" alt="Image 5">
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="img/m7.png" alt="Image 6">
-            </a>
-          </div>
-
         </div>
-        <br>
+    
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <img class="slider-img" src="img/m3.png" alt="">
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 style="color: black;"><img style="height: 420px;" src="img/m3.png" alt="">Designed a community portal using Axure</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="d-flex justify-content-center">
+    
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <img class="slider-img" src="img/m5.png" alt="">
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 style="color: black;"><img style="height: 420px;" src="img/m5.png" alt="">create a community portal website using Spring Boot</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <img class="slider-img" src="img/m6.png" alt="">
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 style="color: black;"><img style="height: 200px;" src="img/m6.png" alt="">Create a website about Web Hosting using Liferay</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+
+
+      <div class="text-center">
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img class="slider-img" src="img/m7.png" alt="">
+          </button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+              
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3 style="color: black;"><img style="height: 420px;" src="img/m7.png" alt="">Create a website about selling cars.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
+
+
+  
+
+      
 
       <!-- footer -->
       <footer class="text-center text-lg-start bg-dark text-muted">
@@ -406,6 +513,14 @@
     <!-- Slick JS -->
     <script type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').slick();
+        });
+      </script>
 
   </body>
 </html>
